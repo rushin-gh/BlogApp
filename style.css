@@ -1,9 +1,11 @@
+/*
 #appLayout {
-  border: 1px solid black;
+    
 
   height: 98vh;
-  width: 99vw;
+  width: 98vw;
 }
+*/
 
 #header {
   border: 1px solid pink;
@@ -19,7 +21,7 @@
 
 #header > div > ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 #header > div > ul > li {
@@ -30,18 +32,24 @@
 }
 
 #body {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 0px;
+  /* padding: 1px; */
 }
 
 #blogCard {
   border: 1px solid cyan;
 
-  /* height: 350px; */
-  width: 310px;
+  /* height: 500px; */
+  width: 325px;
 
   padding: 10px;
+  margin-top: 10px;
 
   display: flex;
   flex-direction: column;
@@ -49,13 +57,30 @@
 }
 
 #body > #blogCard > img {
-  width: inherit;
+  width: 330px;
+  height: 250px;
 }
 
 #body > #blogCard > #dateAndUser {
+  margin-top: auto;
   width: inherit;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border: 1px solid pink;
+}
+
+#searchBar {
+  padding-top: 10px;
+}
+
+#searchBar > #placeInput {
+  margin-right: 10px;
+  font-size: 20px;
+  width: 90%;
+}
+
+#searchBar > #subBtn {
+  font-size: 20px;
+  width: 9%;
 }

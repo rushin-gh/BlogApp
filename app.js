@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./src/Header";
 import Body from "./src/Body";
+import SearchBar from "./src/SearchBar";
 
 const AppLayout = () => {
   return (
