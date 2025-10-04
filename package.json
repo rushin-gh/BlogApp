@@ -9,6 +9,7 @@
   "author": "Rushikesh",
   "license": "ISC",
   "dependencies": {
+    "moment": "^2.30.1",
     "parcel": "^2.16.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { newsApi } from "./Data/constant";
 import SearchBar from "./SearchBar";
+import { GetNewsApiURL } from "./Utils/UrlProcesser";
 
 const Body = () => {
   // const { articles } = News;
@@ -12,8 +12,10 @@ const Body = () => {
   }, [country]);
 
   async function GetNews(arg_country) {
-    let newsUrl = newsApi.replace("{{city}}", arg_country);
-    console.log(newsUrl);
+    let newsUrl = GetNewsApiURL({
+      q: arg_country,
+      from: "2025-10-01",
+    });
 
     const result = await fetch(newsUrl);
     const json = await result.json();
